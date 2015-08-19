@@ -19,7 +19,7 @@
 #
 # Everything in this directory will become public
 
-DEVICE_PACKAGE_OVERLAYS := device/lge/geehrc/overlay
+DEVICE_PACKAGE_OVERLAYS := device/lge/gee/overlay
 
 # This device is xhdpi.  However the platform doesn't
 # currently contain all of the bitmaps at xhdpi density so
@@ -47,46 +47,46 @@ PRODUCT_PACKAGES += \
         librs_jni
 
 PRODUCT_COPY_FILES += \
-	device/lge/geehrc/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
-	device/lge/geehrc/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
-	device/lge/geehrc/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv.bin \
-	device/lge/geehrc/init.geehrc.wifi.sh:system/etc/init.geehrc.wifi.sh
+	device/lge/gee/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
+	device/lge/gee/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
+	device/lge/gee/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv.bin \
+	device/lge/gee/init.geehrc.wifi.sh:system/etc/init.geehrc.wifi.sh
 
 PRODUCT_COPY_FILES += \
-        device/lge/geehrc/fetch-swv:system/bin/fetch-swv
+        device/lge/gee/fetch-swv:system/bin/fetch-swv
 
 PRODUCT_COPY_FILES += \
-	device/lge/geehrc/audio_policy.conf:system/etc/audio_policy.conf
+	device/lge/gee/audio_policy.conf:system/etc/audio_policy.conf
 
 PRODUCT_COPY_FILES += \
-	device/lge/geehrc/mixer_paths.xml:system/etc/mixer_paths.xml
+	device/lge/gee/mixer_paths.xml:system/etc/mixer_paths.xml
 
 PRODUCT_COPY_FILES += \
-	device/lge/geehrc/init.geehrc.rc:root/init.geehrc.rc \
-	device/lge/geehrc/init.geehrc.usb.rc:root/init.geehrc.usb.rc \
-	device/lge/geehrc/fstab.geehrc:root/fstab.geehrc \
-	device/lge/geehrc/ueventd.geehrc.rc:root/ueventd.geehrc.rc \
-        device/lge/geehrc/recovery/twrp.fstab:recovery/root/etc/twrp.fstab \
-	device/lge/geehrc/media_profiles.xml:system/etc/media_profiles.xml \
+	device/lge/gee/init.geehrc.rc:root/init.geehrc.rc \
+	device/lge/gee/init.geehrc.usb.rc:root/init.geehrc.usb.rc \
+	device/lge/gee/fstab.geehrc:root/fstab.geehrc \
+	device/lge/gee/ueventd.geehrc.rc:root/ueventd.geehrc.rc \
+        device/lge/gee/recovery/twrp.fstab:recovery/root/etc/twrp.fstab \
+	device/lge/gee/media_profiles.xml:system/etc/media_profiles.xml \
 	frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
 	frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
 	frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
-	device/lge/geehrc/media_codecs.xml:system/etc/media_codecs.xml
+	device/lge/gee/media_codecs.xml:system/etc/media_codecs.xml
 
 # Prebuilt kl and kcm keymaps
 PRODUCT_COPY_FILES += \
-	device/lge/geehrc/apq8064-tabla-snd-card_Button_Jack.kl:system/usr/keylayout/apq8064-tabla-snd-card_Button_Jack.kl \
-	device/lge/geehrc/hs_detect.kl:system/usr/keylayout/hs_detect.kl \
-	device/lge/geehrc/pmic8xxx_pwrkey.kl:system/usr/keylayout/pmic8xxx_pwrkey.kl \
-	device/lge/geehrc/keypad_8064.kl:system/usr/keylayout/keypad_8064.kl \
-	device/lge/geehrc/apq8064-tabla-snd-card_Button_Jack.kcm:system/usr/keychars/apq8064-tabla-snd-card_Button_Jack.kcm \
-	device/lge/geehrc/hs_detect.kcm:system/usr/keychars/hs_detect.kcm \
-	device/lge/geehrc/keypad_8064.kcm:system/usr/keychars/keypad_8064.kcm \
-	device/lge/geehrc/pmic8xxx_pwrkey.kcm:system/usr/keychars/pmic8xxx_pwrkey.kcm
+	device/lge/gee/apq8064-tabla-snd-card_Button_Jack.kl:system/usr/keylayout/apq8064-tabla-snd-card_Button_Jack.kl \
+	device/lge/gee/hs_detect.kl:system/usr/keylayout/hs_detect.kl \
+	device/lge/gee/pmic8xxx_pwrkey.kl:system/usr/keylayout/pmic8xxx_pwrkey.kl \
+	device/lge/gee/keypad_8064.kl:system/usr/keylayout/keypad_8064.kl \
+	device/lge/gee/apq8064-tabla-snd-card_Button_Jack.kcm:system/usr/keychars/apq8064-tabla-snd-card_Button_Jack.kcm \
+	device/lge/gee/hs_detect.kcm:system/usr/keychars/hs_detect.kcm \
+	device/lge/gee/keypad_8064.kcm:system/usr/keychars/keypad_8064.kcm \
+	device/lge/gee/pmic8xxx_pwrkey.kcm:system/usr/keychars/pmic8xxx_pwrkey.kcm
 
 # Prebuilt input device calibration files
 PRODUCT_COPY_FILES += \
-	device/lge/geehrc/touch_dev.idc:system/usr/idc/touch_dev.idc
+	device/lge/gee/touch_dev.idc:system/usr/idc/touch_dev.idc
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -119,14 +119,14 @@ PRODUCT_PACKAGES += \
         com.android.nfc_extras
 
 # NFCEE access control
-        NFCEE_ACCESS_PATH := device/lge/geehrc/nfc/nfcee_access.xml
+        NFCEE_ACCESS_PATH := device/lge/gee/nfc/nfcee_access.xml
 
 # NFC feature files + configuration
 PRODUCT_COPY_FILES += \
     $(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
-    device/lge/geehrc/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
+    device/lge/gee/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.opengles.version=196608
@@ -191,7 +191,7 @@ PRODUCT_PACKAGES += \
 # Voice processing
 PRODUCT_PACKAGES += libqcomvoiceprocessing
 PRODUCT_COPY_FILES += \
-    device/lge/geehrc/audio_effects.conf:system/vendor/etc/audio_effects.conf
+    device/lge/gee/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
 PRODUCT_PACKAGES += \
 	hci_qcomm_init
@@ -200,7 +200,7 @@ PRODUCT_PACKAGES += \
 	power.msm8960
 
 PRODUCT_COPY_FILES += \
-	device/lge/geehrc/init.geehrc.bt.sh:system/etc/init.geehrc.bt.sh
+	device/lge/gee/init.geehrc.bt.sh:system/etc/init.geehrc.bt.sh
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.qualcomm.bt.hci_transport=smd
@@ -219,7 +219,7 @@ endif
 
 # GPS configuration
 PRODUCT_COPY_FILES += \
-        device/lge/geehrc/gps.conf:system/etc/gps.conf
+        device/lge/gee/gps.conf:system/etc/gps.conf
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -292,7 +292,7 @@ PRODUCT_PACKAGES += \
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
-# This is the geehrc-specific audio package
+# This is the gee-specific audio package
 $(call inherit-product, frameworks/base/data/sounds/AudioPackage10.mk)
 
 $(call inherit-product, hardware/qcom/msm8960/msm8960.mk)
